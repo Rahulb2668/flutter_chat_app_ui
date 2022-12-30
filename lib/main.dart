@@ -15,8 +15,10 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Chat UI',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primaryColor: Colors.red[400],
-        accentColor: const Color(0xFFFEF9EB),
+        colorScheme: const ColorScheme.light().copyWith(
+          primary: const Color.fromARGB(255, 231, 59, 7),
+          secondary: const Color(0xFFFEF9EB),
+        ),
       ),
       home: HomeScreen(key: key),
     );
